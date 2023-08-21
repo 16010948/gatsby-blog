@@ -1,0 +1,22 @@
+# Logs
+logs
+*.logs
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# dotenv environment variable files
+.env*
+
+# gatsby files
+.cache/
+public
+
+# Yarn
+yarn-error.log
+.pnp/
+.pnp.js
+# Yarn Integrity file
+.yarn-integrity

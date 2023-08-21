@@ -1,0 +1,36 @@
+{
+  "name": "gatsby-starter-default",
+  "version": "0.1.0",
+  "description": "A simple stater to get up and developing quickly with Gatsby",
+  "author": "100g0",
+  "dependencies": {
+    "gatsby": "^5.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/16010948/gatsby-blog"
+  },
+  "bugs": {
+    "url": "https://github.com/16010948/gatsby-blog/issues"
+  }
+}
