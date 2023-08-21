@@ -4,7 +4,10 @@
   "description": "A simple stater to get up and developing quickly with Gatsby",
   "author": "100g0",
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "gatsby": "^5.11.0",
+    "gatsby-plugin-emotion": "^8.11.0",
     "gatsby-plugin-react-helmet": "^6.11.0",
     "gatsby-plugin-sharp": "^5.11.0",
     "gatsby-plugin-typescript": "^5.11.0",
