@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react'
 import styled from '@emotion/styled'
 import GlobalStyle from '@components/Common/GlobalStyle'
 import Introduction from '@components/Main/Introduction'
+import CategoryList from '@components/Main/CategoryList'
 import Footer from '@components/Common/Footer'
 
 const CATEGORY_LIST = {
