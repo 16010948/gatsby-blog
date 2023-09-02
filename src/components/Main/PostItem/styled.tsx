@@ -25,24 +25,24 @@ const PostItemContent = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 1.6vh;
 `
 
 const Title = styled.div`
   display: -webkit-box;
   overflow: hidden;
-  margin-bottom: 3px;
+  margin-bottom: 0.3vh;
   text-overflow: ellipsis;
   white-space: normal;
   overflow-wrap: break-word;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 700;
 `
 
 const Date = styled.div`
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 400;
   opacity: 0.7;
 `
@@ -50,16 +50,16 @@ const Date = styled.div`
 const Category = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px;
-  margin: 10px -5px;
+  margin-top: 1vh;
+  margin: 1vh -0.9vw;
 `
 
 const CategoryItem = styled.div`
-  margin: 2.5px 5px;
-  padding: 3px 5px;
+  margin: 0.25vh 0.9vw;
+  padding: 0.3vh 0.9vw;
   border-radius: 3px;
   background: black;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 700;
   color: white;
 `
