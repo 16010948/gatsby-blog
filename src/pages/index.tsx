@@ -1,10 +1,12 @@
 import React, { FunctionComponent } from 'react'
-import styled from '@emotion/styled'
+
 import GlobalStyle from '@components/Common/GlobalStyle'
 import Introduction from '@components/Main/Introduction'
 import CategoryList from '@components/Main/CategoryList'
 import PostList from '@components/Main/PostList'
 import Footer from '@components/Common/Footer'
+
+import * as Styled from './styled'
 
 const CATEGORY_LIST = {
   All: 5,
@@ -12,21 +14,15 @@ const CATEGORY_LIST = {
   Mobile: 2,
 }
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-`
-
 const IndexPage: FunctionComponent = function () {
   return (
-    <Container>
+    <Styled.Container>
       <GlobalStyle />
       <Introduction />
       <CategoryList selectedCategory="Web" categoryList={CATEGORY_LIST} />
       <PostList />
       <Footer />
-    </Container>
+    </Styled.Container>
   )
 }
 

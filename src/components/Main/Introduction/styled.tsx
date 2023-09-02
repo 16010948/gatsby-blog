@@ -1,6 +1,4 @@
-import React, { FunctionComponent } from 'react'
 import styled from '@emotion/styled'
-import ProfileImage from '@components/Main/ProfileImage'
 
 const Background = styled.div`
   width: 100%;
@@ -29,19 +27,4 @@ const Title = styled.div`
   font-weight: 700;
 `
 
-const Introduction: FunctionComponent = function () {
-  return (
-    <Background>
-      <Wrapper>
-        <ProfileImage />
-
-        <div>
-          <SubTitle>Nice to Meet You,</SubTitle>
-          <Title>I'm Junior Frontend Developer.</Title>
-        </div>
-      </Wrapper>
-    </Background>
-  )
-}
-
-export default Introduction
+export { Background, Wrapper, SubTitle, Title }
