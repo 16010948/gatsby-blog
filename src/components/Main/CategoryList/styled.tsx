@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
 
-import { CategoryItemProps, GatsbyLinkProps } from './types'
+import { CategoryItemProps, GatsbyLinkProps } from '@types/CategoryItem.types'
 
 const CategoryListWrapper = styled.div`
   display: flex;

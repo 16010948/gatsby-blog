@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import * as Styled from './styled'
-import { CategoryListProps } from './types'
+import { CategoryListProps } from '@types/CategoryItem.types'
 
 const CategoryList: FunctionComponent<CategoryListProps> = function ({
   selectedCategory,
