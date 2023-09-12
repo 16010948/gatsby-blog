@@ -1,14 +1,33 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, useMemo } from 'react'
 import PostItem from '@components/Main/PostItem'
 import { PostListItemType, PostListProps } from '@types/PostItem.types'
+import useInfiniteScroll, {
+  useInfiniteScrollType,
+} from '@hooks/useInfiniteScroll'
 import * as Styled from './styled'
 
-const PostList: FunctionComponent<PostListProps> = function ({ posts }) {
+const PostList: FunctionComponent<PostListProps> = function ({
+  selectedCategory,
+  posts,
+}) {
+  const { containerRef, postList }: useInfiniteScrollType = useInfiniteScroll(
+    selectedCategory,
+    posts,
+  )
+
   return (
-    <Styled.PostListWrapper>
-      {posts.map(({ node: { id, frontmatter } }: PostListItemType) => (
-        <PostItem {...frontmatter} link="https://www.google.co.kr/" key={id} />
-      ))}
+    <Styled.PostListWrapper ref={containerRef}>
+      {postList.map(
+        ({
+          node: {
+            id,
+            fields: { slug },
+            frontmatter,
+          },
+        }: PostListItemType) => (
+          <PostItem {...frontmatter} link={slug} key={id} />
+        ),
+      )}
     </Styled.PostListWrapper>
   )
 }
