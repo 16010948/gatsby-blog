@@ -1,4 +1,5 @@
 import React, { createRef, FunctionComponent, useEffect } from 'react'
+import * as Styled from './styled'
 
 const src = 'https://utteranc.es/client.js'
 const repo = '16010948/16010948.github.io' // 자신 계정의 레포지토리로 설정
@@ -38,7 +39,7 @@ const CommentWidget: FunctionComponent = function () {
     element.current.appendChild(utterances)
   }, [])
 
-  return <div ref={element} />
+  return <Styled.UtterancesWrapper ref={element} />
 }
 
 export default CommentWidget
