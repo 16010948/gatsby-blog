@@ -3,6 +3,7 @@ module.exports = {
     title: `Gatsby Blog`,
     description: `Gatsby Blog`,
     author: `100g0`,
+    siteUrl: '<https://my-website-link.com>',
   },
   plugins: [
     {
