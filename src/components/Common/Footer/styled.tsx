@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-const FooterWrapper = styled.div`
+const FooterWrapper = styled.footer`
   display: grid;
   place-items: center;
   margin-top: auto;
