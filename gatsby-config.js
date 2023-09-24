@@ -3,7 +3,7 @@ module.exports = {
     title: `Gatsby Blog`,
     description: `Gatsby Blog`,
     author: `100g0`,
-    siteUrl: '<https://my-website-link.com>',
+    siteUrl: 'https://16010948.github.io/',
   },
   plugins: [
     {
@@ -41,6 +41,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -77,6 +78,19 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://16010948.github.io/',
+        stripQueryString: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
   ],
